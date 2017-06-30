@@ -1,0 +1,31 @@
+Exercise One
+
+    Encapsulation
+        Refers to the practice of keeping a methods and the data they affect as a singular unit.
+        In practice this means using private fields which other classes can only access using particular methods. Often getter and setter methods.
+        The example provided within my solution to the second exercise is in the Price class where access to the 'total' field within the Superclass Costing is accessed
+        through the method 'getTotal()' but is otherwise inaccessible to the class.
+
+
+    Inheritance
+        Within Java this is implemented through Super and subclasses. Where an instance of a subclass is considered both a member of its own class as 
+        well as a member of its superclass. This means it has available the methods and fields of both classes. The subclass is this described as
+        inheriting from the super class.
+        The example provided within my solution to the second exercise is in the relation between the Price and Costing classes. The costing class refers
+        specifically to the total cost to be paid by visitors and has the 'total' field, as well as getters and setters for it. The price class then adds a method
+        for adding tickets to the 'total' field based on the ticket type, while also considering the day of the week, which it inherits from the costing class as well.
+
+
+
+    Polymorphism
+        This is a java objects ability to have different types. The example I have used is when a Price object is used as a Costing object to access it's methods. This is
+        a common way in which polymorphism appears in java, when parent and child objects are used as the same. This is because Java assigns types to a given reference 
+        and this type cannot be changed unless it is reassigned, however a parent object and refer also to any of it's subtypes.
+
+
+    Abstraction
+        The focus with abstraction is to describe the functionality a class should include without actually implementing the functionality in the place where it is described.
+        Within java an abstract class generally describes the fields and methods of a class, as well as their input and output, while another class implements. Often an abstract
+        class may be publicly visible, allowing others to see what functionality is available, while the implementation class is hidden. Allowing the programmer to hide
+        extra information from others. This allows outside users to interact with the system while only seeing a certain level of detail. As an example of this I have made
+        a Ticket class which is abstract and implemented by the Tickets class.
